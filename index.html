@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi🍣</title>
+    <style>
+      body {
+        display: block;
+        margin: 8px;
+        background: #d0cbfb;
+      }
+      h1 {
+        font-family: myhandwriting, Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #6d4086;
+        font-size: 3.5em;
+        border: 5px solid #c1ddff;
+        border-style: double;
+        border-radius: 30px;
+        margin-bottom: 0px;
+        padding: 20px;
+        border-image: linear-gradient(to right, #da8fd9, white) 6;
+      }
+      h2 {
+        font-family: myhandwriting, Arial, Helvetica, sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: myhandwriting, Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: center;
+      }
+      button {
+        font-family: myhandwriting, Arial, Helvetica, sans-serif;
+      }
+      .bold-text {
+        font-weight: bolder;
+        color: #5fabba;
+        text-decoration: wavy underline;
+      }
+      hr {
+        border: none;
+        margin: 10px 0;
+        background-image: linear-gradient(to right, #dbadfa, #b1d3fc);
+        height: 5px;
+      }
+
+      .container {
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        padding: 10px 125px;
+        border: 5px hidden #deb8f7;
+        border-radius: 15%;
+        background-image: linear-gradient(to left, #deb8f7, #c1ddff);
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .more_info {
+        font-size: 24px;
+        text-align: left;
+        color: whitesmoke;
+        margin-left: 0;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 25px;
+        font-size: 40px;
+        background: rgb(94, 171, 186);
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px 20px;
+        transition: all 200ms ease;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+      }
+      button:hover {
+        background-image: linear-gradient(to left, #deb8f7, #c1ddff);
+        color: rgb(94, 171, 186);
+      }
+      .footer {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sushi is my favorite food!</h1>
+      <h2>
+        Specifically <strong>Nigiri</strong> and <strong>Salmon</strong> roll😋
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/161/759/original/nigiri.png?1743357625"
+        alt="Nigiri and Salmon Roll Combo"
+        width="300"
+      />
+      <hr />
+      <p>
+        <strong>Nigiri</strong> is a type of Japanese sushi consisting of a
+        small mound of vinegared rice topped with a slice of raw or cooked fish,
+        often served with a small dab of wasabi between the rice and fish, while
+        <strong>salmon roll</strong> (often referred to as a
+        <span class="bold-text">"salmon maki roll"</span>) is a sushi roll where
+        fresh salmon is rolled with vinegared rice and seaweed
+        <strong>(nori)</strong>, sometimes accompanied by ingredients like
+        avocado, cucumber, or other fillings, and often served with soy sauce,
+        wasabi, or pickled ginger on the side.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Sushi"
+          target="_blank"
+          class="more_info"
+          >Swim over to Wikipedia!</a
+        >
+      </p>
+      <button class="fish-button">🎣Fish for Sushi!🎣</button>
+      <p class="footer">
+        Page was built by
+        <a
+          href="https://www.linkedin.com/in/o%E2%80%99martrianna-mcdaniel-63096429b/"
+          target="_blank"
+          >O'Martrianna McDaniel
+        </a>
+      </p>
+    </div>
+    <script>
+      function fish() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if (name && email) {
+          alert(
+            "Thank you," +
+              " " +
+              name +
+              "!" +
+              " " +
+              "We will be in touch soon by email to get you geared up and fishing for sushi!🍣"
+          );
+        } else {
+          alert("No name? Well, no sushi for you.😔");
+        }
+      }
+      let fishButton = document.querySelector(".fish-button");
+      fishButton.addEventListener("click", fish);
+    </script>
+  </body>
+</html>
